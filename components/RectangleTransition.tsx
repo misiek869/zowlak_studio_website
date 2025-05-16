@@ -2,6 +2,7 @@
 
 import { AnimatePresence } from 'framer-motion'
 import { usePathname } from 'next/navigation'
+import Rectangle from './Rectangle'
 
 const RectangleTransition = () => {
 	const pathname = usePathname()
