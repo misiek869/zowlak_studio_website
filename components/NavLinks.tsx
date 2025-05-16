@@ -27,7 +27,7 @@ const NavLinks = ({ containerStyles }: { containerStyles: string }) => {
 				const charLength = link.name.length
 
 				const lineWidth = charLength > 5 ? 'after:w-[120%]' : 'after:w-[90%]'
-				console.log(charLength)
+
 				return (
 					<Link
 						className={`relative text-lg uppercase text-slate-50 ${
