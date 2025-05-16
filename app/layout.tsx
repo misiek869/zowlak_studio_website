@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import './globals.css'
 import MainNav from '@/components/MainNav'
+import PageTransition from '@/components/PageTransition'
 
 const montserrat = Montserrat({
 	variable: '--font-montserrat',
@@ -21,15 +22,17 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={`${montserrat.variable}  antialiased`}>
-				<div className='flex'>
-					<div className='hidden 2xl:flex w-[285px] h-screen bg-gray-800 text-slate-50'>
-						<MainNav />
+				<PageTransition>
+					<div className='flex'>
+						<div className='hidden 2xl:flex w-[285px] h-screen bg-gray-800 text-slate-50'>
+							<MainNav />
+						</div>
+						<div className='w-full max-w-[1130px] px-[15px] mx-auto bg-gray-800/10'>
+							<header>header</header>
+							<div>{children}</div>
+						</div>
 					</div>
-					<div className='w-full max-w-[1130px] px-[15px] mx-auto bg-gray-800/10'>
-						<header>header</header>
-						<div>{children}</div>
-					</div>
-				</div>
+				</PageTransition>
 			</body>
 		</html>
 	)
