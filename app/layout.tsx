@@ -21,8 +21,15 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={`${montserrat.variable}  antialiased`}>
-				<MainNav />
-				<div>{children}</div>
+				<div className='flex'>
+					<div className='hidden 2xl:flex w-[285px] h-screen bg-gray-800 text-slate-50'>
+						<MainNav />
+					</div>
+					<div className='w-full max-w-[1130px] px-[15px] mx-auto bg-gray-800/10'>
+						<header>header</header>
+						<div>{children}</div>
+					</div>
+				</div>
 			</body>
 		</html>
 	)
