@@ -3,6 +3,7 @@ import { Montserrat } from 'next/font/google'
 import './globals.css'
 import MainNav from '@/components/MainNav'
 import PageTransition from '@/components/PageTransition'
+import RectangleTransition from '@/components/RectangleTransition'
 
 const montserrat = Montserrat({
 	variable: '--font-montserrat',
@@ -22,6 +23,7 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={`${montserrat.variable}  antialiased`}>
+				<RectangleTransition />
 				<PageTransition>
 					<div className='flex'>
 						<div className='hidden 2xl:flex w-[285px] h-screen bg-gray-800 text-slate-50'>
