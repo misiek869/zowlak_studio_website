@@ -15,8 +15,8 @@ const Home = () => {
 				transition: { delay: 1, duration: 0.4, ease: 'easeIn' },
 			}}>
 			<div className='flex flex-col xl:flex-row items-center justify-between w-full'>
-				<div className='w-full xl:w-[550px]'>
-					<h1 className='h1'>
+				<div className='w-full xl:w-[550px] flex flex-col items-center xl:items-start text-center xl:text-left'>
+					<h1 className='h1 flex-1'>
 						<TypeAnimation
 							sequence={[
 								'Z',
@@ -49,6 +49,12 @@ const Home = () => {
 							cursor={false}
 						/>
 					</h1>
+					<h3 className='h3 mt-10 mb-10'>Architektura i Wnętrza</h3>
+					<button className='btn btn-lg btn-gray'>
+						<div>
+							<span>Go</span>
+						</div>
+					</button>
 				</div>
 
 				<div className='flex-1 hidden xl:block relative z-20'>
