@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
 import Image from 'next/image'
 import avatarImage from '@/public/assets/avatar.png'
+import { MdArrowCircleRight } from 'react-icons/md'
 
 const Home = () => {
 	return (
@@ -51,8 +52,9 @@ const Home = () => {
 					</h1>
 					<h3 className='h3 mt-10 mb-10'>Architektura i Wnętrza</h3>
 					<button className='btn btn-lg btn-gray'>
-						<div>
+						<div className='flex items-center gap-3'>
 							<span>Go</span>
+							<MdArrowCircleRight className='text-xl' />
 						</div>
 					</button>
 				</div>
