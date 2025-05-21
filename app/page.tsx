@@ -6,6 +6,7 @@ import Image from 'next/image'
 import avatarImage from '@/public/assets/avatar.png'
 import { MdArrowCircleRight } from 'react-icons/md'
 import { HiOutlinePhone, HiOutlineMail } from 'react-icons/hi'
+import Socials from '@/components/Socials'
 
 const Home = () => {
 	return (
@@ -74,6 +75,7 @@ const Home = () => {
 						</div>
 					</div>
 					{/* socials */}
+					<Socials />
 					<div className=''></div>
 				</div>
 
