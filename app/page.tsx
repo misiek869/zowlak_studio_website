@@ -5,6 +5,7 @@ import { TypeAnimation } from 'react-type-animation'
 import Image from 'next/image'
 import avatarImage from '@/public/assets/avatar.png'
 import { MdArrowCircleRight } from 'react-icons/md'
+import { HiOutlinePhone, HiOutlineMail } from 'react-icons/hi'
 
 const Home = () => {
 	return (
@@ -51,12 +52,29 @@ const Home = () => {
 						/>
 					</h1>
 					<h3 className='h3 mt-10 mb-10'>Architektura i Wnętrza</h3>
-					<button className='btn btn-lg btn-gray'>
+					<button className='btn btn-lg btn-gray mb-12 xl:mb-8'>
 						<div className='flex items-center gap-3'>
 							<span>Go</span>
 							<MdArrowCircleRight className='text-xl' />
 						</div>
 					</button>
+					{/* contact */}
+					<div className='flex flex-col xl:flex-row xl:items-center gap-4 xl:gap-8 mb-12 xl:mb-0'>
+						<div className='flex items-center gap-4 text-lg'>
+							<span>
+								<HiOutlinePhone className='text-xl' />
+							</span>
+							<span>505 145 522</span>
+						</div>
+						<div className='flex items-center gap-4 text-lg'>
+							<span>
+								<HiOutlineMail className='text-xl' />
+							</span>
+							<span>zwolak.studio@gmail.com</span>
+						</div>
+					</div>
+					{/* socials */}
+					<div className=''></div>
 				</div>
 
 				<div className='flex-1 hidden xl:block relative z-20'>
