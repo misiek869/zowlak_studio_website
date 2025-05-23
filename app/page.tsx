@@ -7,6 +7,7 @@ import avatarImage from '@/public/assets/avatar.png'
 import { MdArrowCircleRight } from 'react-icons/md'
 import { HiOutlinePhone, HiOutlineMail } from 'react-icons/hi'
 import Socials from '@/components/Socials'
+import Pattern from '@/components/Pattern'
 
 const Home = () => {
 	return (
@@ -17,6 +18,7 @@ const Home = () => {
 				opacity: 1,
 				transition: { delay: 1, duration: 0.4, ease: 'easeIn' },
 			}}>
+			<Pattern />
 			<div className='flex flex-col xl:flex-row items-center justify-between w-full'>
 				<div className='w-full xl:w-[550px] flex flex-col items-center xl:items-start text-center xl:text-left'>
 					<h1 className='h1 flex-1'>
