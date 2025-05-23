@@ -75,7 +75,14 @@ const Home = () => {
 						</div>
 					</div>
 					{/* socials */}
-					<Socials />
+					<Socials
+						containerStyles={
+							'flex 2xl:flex-col gap-6 2xl:flex 2xl:absolute 2xl:top-1/2 2xl:right-2 2xl:transform 2xl:-translate-y-1/2'
+						}
+						iconStyles={
+							'bg-gray-900 text-slate-50 hover:bg-gray-700 transition w-[48px] h-[48px] rounded-full flex items-center justify-center text-[22px] cursor-pointer'
+						}
+					/>
 					<div className=''></div>
 				</div>
 
