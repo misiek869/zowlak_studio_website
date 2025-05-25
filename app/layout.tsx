@@ -4,6 +4,7 @@ import './globals.css'
 import MainNav from '@/components/MainNav'
 import PageTransition from '@/components/PageTransition'
 import RectangleTransition from '@/components/RectangleTransition'
+import Gradients from '@/components/Gradients'
 
 const montserrat = Montserrat({
 	variable: '--font-montserrat',
@@ -24,6 +25,7 @@ export default function RootLayout({
 		<html lang='en'>
 			<body
 				className={`${montserrat.variable}  antialiased overflow-hidden relative`}>
+				<Gradients />
 				<RectangleTransition />
 				<PageTransition>
 					<div className='flex'>
