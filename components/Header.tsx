@@ -7,6 +7,7 @@ const Header = () => {
 			<div className='container mx-auto '>
 				<div className=''>
 					<Logo />
+          
 				</div>
 			</div>
 		</div>
