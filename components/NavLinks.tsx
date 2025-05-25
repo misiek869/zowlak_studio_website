@@ -16,7 +16,13 @@ const links: LinksArr[] = [
 	{ name: 'contact', path: '/contact' },
 ]
 
-const NavLinks = ({ containerStyles }: { containerStyles: string }) => {
+const NavLinks = ({
+	containerStyles,
+	linkStyle = 'text-slate-50 text-left',
+}: {
+	containerStyles: string
+	linkStyle: string
+}) => {
 	const pathname = usePathname()
 
 	return (
@@ -30,7 +36,7 @@ const NavLinks = ({ containerStyles }: { containerStyles: string }) => {
 
 				return (
 					<Link
-						className={`relative text-lg uppercase text-slate-50 ${
+						className={`relative text-lg uppercase ${linkStyle} ${
 							isActiveRoute &&
 							`after:content-[''] after:block after:absolute after:left-0 after:bottom-[-1] ${lineWidth} after:h-[4px] after:bg-slate-50 after:z-0`
 						}`}
