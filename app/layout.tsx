@@ -5,6 +5,7 @@ import MainNav from '@/components/MainNav'
 import PageTransition from '@/components/PageTransition'
 import RectangleTransition from '@/components/RectangleTransition'
 import Gradients from '@/components/Gradients'
+import Header from '@/components/Header'
 
 const montserrat = Montserrat({
 	variable: '--font-montserrat',
@@ -33,7 +34,7 @@ export default function RootLayout({
 							<MainNav />
 						</div>
 						<div className='w-full max-w-[1130px] px-[15px] mx-auto bg-gray-800/10'>
-							<header>header</header>
+							<Header />
 							<div>{children}</div>
 						</div>
 					</div>
