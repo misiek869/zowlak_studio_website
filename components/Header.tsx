@@ -3,6 +3,7 @@ import Logo from './Logo'
 import Socials from './Socials'
 import { CiMenuFries } from 'react-icons/ci'
 import { MdFileDownload } from 'react-icons/md'
+import { MdArrowCircleRight } from 'react-icons/md'
 import NavLinks from './NavLinks'
 import {
 	Sheet,
@@ -25,7 +26,7 @@ const Header = () => {
 							<CiMenuFries />
 						</SheetTrigger>
 						<SheetContent
-							className='bg-primary border-0 flex flex-col items-center justify-between pt-16 pb-20'
+							className='bg-primary border-0 flex flex-col items-center justify-center pt-16 pb-20'
 							side='left'>
 							<SheetHeader>
 								<SheetTitle>
@@ -39,6 +40,19 @@ const Header = () => {
 								linkStyle={'text-gray-800 text-center'}
 								containerStyles='flex flex-col gap-8 max-w-[100px]'
 							/>
+							<div className=''>
+								{' '}
+								<button className='btn btn-lg btn-gray mb-12 xl:mb-8'>
+									<div className='flex items-center gap-3'>
+										<span>Download</span>
+										<MdArrowCircleRight className='text-xl' />
+									</div>
+								</button>
+								<Socials
+									containerStyles='flex gap-4 justify-center'
+									iconStyles='bg-gray-900 text-slate-50 rounded-full hover:bg-gray-800 transition w-[40px] h-[40px] text-[20px] flex items-center justify-center cursor-pointer'
+								/>
+							</div>
 						</SheetContent>
 					</Sheet>
 				</div>
