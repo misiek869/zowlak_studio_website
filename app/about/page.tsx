@@ -29,6 +29,13 @@ const AboutPage = () => {
 								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
 								dignissimos?
 							</p>
+							<div className='flex flex-col items-start gap-16'>
+								<div className=''>stats</div>
+								<div className=''>testimonials</div>
+								<div className=''>info</div>
+								<div className=''>journey</div>
+								<div className=''>skills</div>
+							</div>
 						</div>
 					</ScrollArea>
 				</div>
