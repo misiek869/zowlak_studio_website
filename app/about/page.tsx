@@ -20,12 +20,11 @@ const AboutPage = () => {
 					</div>
 					<ScrollArea className='w-full h-[680px]'>
 						<div className='flex flex-col items-center gap-3 mb-4'>
-							<div className='w-2 h-2 bg-gray-900 rounded-full text-slate-50'>
-								<p>About</p>
-							</div>
-							<h2 className='h2 mb-6'>
+							{/* <div className='w-2 h-2 bg-gray-900 rounded-full text-slate-50'></div> */}
+							<h2 className='h2 mb-6'>Biuro</h2>
+							{/* <h2 className='h2 mb-6'>
 								Zwolak<span>Studio</span>
-							</h2>
+							</h2> */}
 							<p className='max-w-[540px] mb-12'>
 								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
 								dignissimos?
