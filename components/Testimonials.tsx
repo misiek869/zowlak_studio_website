@@ -36,7 +36,7 @@ const Testimonials = () => {
 			modules={[Autoplay]}
 			loop={true}
 			autoplay={{ delay: 4000, disableOnInteraction: false }}
-			className='w-full max-w-[300px] md:max-w-[520px] bg-red-200 rounded-lg'>
+			className='w-full max-w-[300px] md:max-w-[520px] bg-gray-900/10 rounded-lg'>
 			{testimonials.map((item, index) => {
 				return (
 					<SwiperSlide key={index}>
