@@ -55,3 +55,8 @@ body {
 .btn-gray {
 	@apply bg-gray-800 hover:bg-gray-900 text-slate-50;
 }
+
+/* swiper css */
+.swiper {
+	margin: 0 !important;
+}
