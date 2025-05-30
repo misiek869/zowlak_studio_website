@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Stats from '@/components/Stats'
 import Testimonials from '@/components/Testimonials'
 import Info from '@/components/Info'
+import Journey from '@/components/Journey'
 
 const AboutPage = () => {
 	return (
@@ -35,7 +36,7 @@ const AboutPage = () => {
 								<Stats />
 								<Testimonials />
 								<Info />
-								<div className=''>journey</div>
+								<Journey />
 								<div className=''>skills</div>
 							</div>
 						</div>
