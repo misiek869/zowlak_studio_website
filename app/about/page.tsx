@@ -6,6 +6,7 @@ import Stats from '@/components/Stats'
 import Testimonials from '@/components/Testimonials'
 import Info from '@/components/Info'
 import Journey from '@/components/Journey'
+import Skills from '@/components/Skills'
 
 const AboutPage = () => {
 	return (
@@ -37,7 +38,7 @@ const AboutPage = () => {
 								<Testimonials />
 								<Info />
 								<Journey />
-								<div className=''>skills</div>
+								<Skills />
 							</div>
 						</div>
 					</ScrollArea>

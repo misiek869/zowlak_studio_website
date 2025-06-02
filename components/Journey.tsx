@@ -38,9 +38,9 @@ const Journey = () => {
 							<div className='w-[1px] h-[180px] bg-gray-900/10 rounded-full'></div>
 						</div>
 						<div className='max-w-[500px]'>
-							<p>{item.years}</p>
-							<h4>{item.role}</h4>
-							<h4>{item.institution}</h4>
+							<p className='mb-6 text-lg '>{item.years}</p>
+							<h4 className='h4 mb-2'>{item.role}</h4>
+							<h4 className='text-lg '>{item.institution}</h4>
 						</div>
 					</div>
 				)
