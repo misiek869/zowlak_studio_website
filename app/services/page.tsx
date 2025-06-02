@@ -16,22 +16,22 @@ type Service = {
 
 const services: Service[] = [
 	{
-		icon: '/services/design.svg',
+		icon: '/assets/services/design.svg',
 		href: '',
 		title: 'Random Title',
 	},
 	{
-		icon: '/services/design.svg',
+		icon: '/assets/services/design.svg',
 		href: '',
 		title: 'Random Title',
 	},
 	{
-		icon: '/services/design.svg',
+		icon: '/assets/services/design.svg',
 		href: '',
 		title: 'Random Title',
 	},
 	{
-		icon: '/services/design.svg',
+		icon: '/assets/services/design.svg',
 		href: '',
 		title: 'Random Title',
 	},
@@ -40,12 +40,16 @@ const services: Service[] = [
 const ServicesPage = () => {
 	return (
 		<motion.section
+			className='h-screen flex items-center'
 			initial={{ opacity: 0 }}
 			animate={{
 				opacity: 1,
 				transition: { delay: 2.4, duration: 0.4, ease: 'easeIn' },
 			}}>
-			contact
+			<div className='container mx-auto w-full flex flex-col gap-16'>
+				<div className=''>text</div>
+				<div className=''>slider</div>
+			</div>
 		</motion.section>
 	)
 }
