@@ -7,6 +7,8 @@ import Testimonials from '@/components/Testimonials'
 import Info from '@/components/Info'
 import Journey from '@/components/Journey'
 import Skills from '@/components/Skills'
+import Blob from '@/components/Blob'
+import Socials from '@/components/Socials'
 
 const AboutPage = () => {
 	return (
@@ -19,8 +21,26 @@ const AboutPage = () => {
 			}}>
 			<div className='container max-auto px-0'>
 				<div className='flex flex-col xl:flex-row items-center gap-24 w-full h-[680px]'>
-					<div className='w-full h-full max-w-[430px] relative pt-14 bg-red-300 hidden xl:flex'>
-						1
+					<div className='w-full h-full max-w-[430px] relative pt-14 hidden xl:flex flex-col'>
+						<Image
+							src={'/assets/avatar.png'}
+							width={320}
+							height={496}
+							alt='avatar image'
+							className='z-20 relative'
+						/>
+
+						{/* ovelay */}
+						{/* <div className='w-full h-[60px] absolute left-0 top-[420px] right-0 bg-gradient-to-t from-primary via-primary/90 z-30'></div> */}
+
+						{/* blob */}
+						<div className='absolute top-[80px] -left-[80px] z-10'>
+							<Blob containerStyles={'w-[420px] h-[420px]'} />
+						</div>
+						<Socials
+							containerStyles='flex gap-4 z-40 transform translate-x-[30px]'
+							iconStyles='w-[48px] h-[48px] text-slate-50 text-[22px] hover:text-slate-200 transition-all flex items-center justify-center rounded-full cursor-pointer'
+						/>
 					</div>
 					<ScrollArea className='w-full h-[680px]'>
 						<div className='flex flex-col items-center gap-3 mb-4'>
