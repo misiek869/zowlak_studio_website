@@ -60,3 +60,9 @@ body {
 .swiper {
 	margin: 0 !important;
 }
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullet
+	.swiper-pagination-bullet {
+	@apply bg-gray-900;
+}
