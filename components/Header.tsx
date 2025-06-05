@@ -22,7 +22,7 @@ const Header = () => {
 					<Logo />
 					{/* nav mobile */}
 					<Sheet>
-						<SheetTrigger className='cursor-pointer text-[30px] text-slate-50'>
+						<SheetTrigger className='cursor-pointer text-[30px] text-gray-900'>
 							<CiMenuFries />
 						</SheetTrigger>
 						<SheetContent
