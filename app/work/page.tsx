@@ -8,7 +8,7 @@ import 'swiper/css/pagination'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import Link from 'next/link'
 import Image from 'next/image'
-import { MdOutlineArrowOutward } from 'react-icons/md'
+import { MdArrowOutward, MdOutlineArrowOutward } from 'react-icons/md'
 import { FaGithub } from 'react-icons/fa'
 import { li } from 'framer-motion/client'
 
@@ -127,6 +127,21 @@ const WorkPage = () => {
 																		)
 																	})}
 																</ul>
+															</div>
+															{/* buttons */}
+															<div className=' flex flex-col sm:flex-row gap-4 items-start'>
+																<Link href={item.link}>
+																	<button className='btn btn-sm btn-gray flex gap-2'>
+																		<MdArrowOutward className='text-xl' />
+																		<span>Live Project</span>
+																	</button>
+																</Link>
+																<Link href={item.github}>
+																	<button className='btn btn-sm btn-gray flex gap-2'>
+																		<FaGithub className='text-xl' />
+																		<span>Github</span>
+																	</button>
+																</Link>
 															</div>
 														</div>
 														<div className='w-full h-[200px] md:h-[400px] relative bg-pink-300 order-1 xl:order-none rounded-lg overflow-hidden'>
