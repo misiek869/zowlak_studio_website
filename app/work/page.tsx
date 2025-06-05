@@ -106,7 +106,10 @@ const WorkPage = () => {
 						{categories.map((item, index) => {
 							return (
 								<TabsContent key={index} value={item}>
-									<Swiper>
+									<Swiper
+										modules={[Pagination]}
+										pagination={{ clickable: true, dynamicBullets: true }}
+										className='h-max xl-[460px]'>
 										{projects
 											.filter(project => project.category === item)
 											.map((item, index) => (
