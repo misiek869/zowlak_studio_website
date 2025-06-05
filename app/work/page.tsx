@@ -102,7 +102,7 @@ const WorkPage = () => {
 						})}
 					</TabsList>
 					{/* tabs content */}
-					<div className=''>
+					<div className='h-[400px] scrollbar scrollbar-thumb-white scrollbar-track-white/5 overflow-y-scroll xl:overflow-y-visible'>
 						{categories.map((item, index) => {
 							return (
 								<TabsContent key={index} value={item}>
