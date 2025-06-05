@@ -57,7 +57,7 @@ const Home = () => {
 					<h3 className='h3 mt-10 mb-10'>Architektura i Wnętrza</h3>
 					<button className='btn btn-lg btn-gray mb-12 xl:mb-8'>
 						<div className='flex items-center gap-3'>
-							<span>Go</span>
+							<span>Czym się zajmujemy</span>
 							<MdArrowCircleRight className='text-xl' />
 						</div>
 					</button>

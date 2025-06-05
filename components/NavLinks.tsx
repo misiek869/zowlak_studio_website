@@ -10,11 +10,11 @@ type LinksArr = {
 }
 
 const links: LinksArr[] = [
-	{ name: 'home', path: '/' },
-	{ name: 'about', path: '/about' },
-	{ name: 'services', path: '/services' },
-	{ name: 'work', path: '/work' },
-	{ name: 'contact', path: '/contact' },
+	{ name: 'główna', path: '/' },
+	{ name: 'o mnie', path: '/about' },
+	{ name: 'usługi', path: '/services' },
+	{ name: 'moje projekty', path: '/work' },
+	{ name: 'kontakt', path: '/contact' },
 ]
 
 const NavLinks = ({
