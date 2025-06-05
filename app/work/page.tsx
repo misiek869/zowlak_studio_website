@@ -10,6 +10,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { MdOutlineArrowOutward } from 'react-icons/md'
 import { FaGithub } from 'react-icons/fa'
+import { li } from 'framer-motion/client'
 
 type Project = {
 	id: number
@@ -37,7 +38,7 @@ const projects: Project[] = [
 	{
 		id: 2,
 		category: 'wnętrza',
-		title: 'Projekt 1',
+		title: 'Projekt 2',
 		description:
 			'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, asperiores.',
 		image: '/assets/work/work.jpg',
@@ -48,7 +49,7 @@ const projects: Project[] = [
 	{
 		id: 3,
 		category: 'budowlane',
-		title: 'Projekt 1',
+		title: 'Projekt 3',
 		description:
 			'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, asperiores.',
 		image: '/assets/work/work.jpg',
@@ -59,7 +60,7 @@ const projects: Project[] = [
 	{
 		id: 4,
 		category: 'wnętrza',
-		title: 'Projekt 1',
+		title: 'Projekt 4',
 		description:
 			'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, asperiores.',
 		image: '/assets/work/work.jpg',
@@ -101,6 +102,51 @@ const WorkPage = () => {
 						})}
 					</TabsList>
 					{/* tabs content */}
+					<div className=''>
+						{categories.map((item, index) => {
+							return (
+								<TabsContent key={index} value={item}>
+									<Swiper>
+										{projects
+											.filter(project => project.category === item)
+											.map((item, index) => (
+												<SwiperSlide className='h-full' key={index}>
+													<div className='flex flex-col xl:flex-row gap-8 xl:gap-12'>
+														<div className='w-full max-w-[380px] flex flex-col gap-6 xl:gap-8 xl:pt-6 order-2 xl:order-none'>
+															<h3 className='h3'>{item.title}</h3>
+															<div className='xl:mb-4 max-w-[300px] min-h-[130px]'>
+																<p className='mb-4 '>Technologies Used</p>
+																<ul className='flex flex-wrap gap-4'>
+																	{item.tech.map(tech => {
+																		return (
+																			<li
+																				key={tech}
+																				className='flex items-center gap-4 bg-gray-900/10 h-[28px] px-[14px] rounded-full'>
+																				{tech}
+																			</li>
+																		)
+																	})}
+																</ul>
+															</div>
+														</div>
+														<div className='w-full h-[200px] md:h-[400px] relative bg-pink-300 order-1 xl:order-none rounded-lg overflow-hidden'>
+															<Image
+																src={item.image}
+																fill
+																// width={}
+																// height={}
+																className='object-cover'
+																alt='project image'
+															/>
+														</div>
+													</div>
+												</SwiperSlide>
+											))}
+									</Swiper>
+								</TabsContent>
+							)
+						})}
+					</div>
 				</Tabs>
 			</div>
 		</motion.section>
