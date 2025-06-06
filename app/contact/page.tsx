@@ -26,7 +26,37 @@ const ContactPage = () => {
 			<div className='container mx-auto w-full h-full flex flex-col items-center xl:justify-center xl:overflow-hidden scrollbar-thumb-white scrollbar-track-white/5 overflow-y-scroll xl:overflow-y-visible'>
 				<div className='w-full'>
 					<div className='flex  flex-col xl:flex-row gap-6'>
-						<div className=''>info text</div>
+						{/* info text */}
+						<div className='flex-1 xl:w-[600px] flex flex-col gap-12'>
+							<div className=''>
+								<h2 className='h2 mb-6'>Kontakt</h2>
+								<p className='max-w-[460px]'>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
+									maiores.
+								</p>
+							</div>
+							<div className='flex flex-col gap-8 mb-6 xl:mb-0'>
+								<div className='flex items-center gap-4 text-lg'>
+									<span className=''>
+										<HiOutlinePhone className='text-2xl' />
+									</span>
+									<span>+48 505 145 522</span>
+								</div>
+								<div className='flex items-center gap-4 text-lg'>
+									<span className=''>
+										<HiOutlineMail className='text-2xl' />
+									</span>
+									<span>zwolakstudio@gmail.com</span>
+								</div>
+								<div className='flex items-center gap-4 text-lg'>
+									<span className=''>
+										<HiOutlineMapPin className='text-2xl' />
+									</span>
+									<span>Tomasza Arciszewskieg 11/2, Oświęcim</span>
+								</div>
+							</div>
+						</div>
+						{/* form */}
 						<div className='flex-1'>
 							<form action='' className='flex flex-col gap-6 items-start'>
 								{/* first and last name */}
