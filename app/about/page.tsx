@@ -57,8 +57,8 @@ const AboutPage = () => {
 								<Stats />
 								<Testimonials />
 								<Info />
-								<Journey />
-								<Skills />
+								{/* <Journey /> */}
+								{/* <Skills /> */}
 							</div>
 						</div>
 					</ScrollArea>

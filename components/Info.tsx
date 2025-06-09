@@ -30,7 +30,7 @@ const Info = () => {
 					<HiOutlinePhone className='text-2xl mt-1 text-gray-900' />
 					<div className=''>
 						<p className='text-lg'>Telefon</p>
-						<p>2025</p>
+						<p>+48 512 145 522</p>
 					</div>
 				</div>
 				<div className='w-[280px] flex items-start gap-4'>
