@@ -37,10 +37,6 @@ const AboutPage = () => {
 						<div className='absolute top-[80px] -left-[80px] z-10'>
 							<Blob containerStyles={'w-[420px] h-[420px]'} />
 						</div>
-						<Socials
-							containerStyles='flex gap-4 z-40 transform translate-x-[30px]'
-							iconStyles='w-[48px] h-[48px] text-slate-50 text-[22px] hover:text-slate-200 transition-all flex items-center justify-center rounded-full cursor-pointer'
-						/>
 					</div>
 					<ScrollArea className='w-full h-[680px]'>
 						<div className='flex flex-col items-center gap-3 mb-4'>
