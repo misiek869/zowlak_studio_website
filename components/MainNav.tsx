@@ -10,7 +10,7 @@ const MainNav = () => {
 				<Logo />
 				<NavLinks containerStyles='flex flex-col gap-6 mt-20' linkStyle='' />
 			</div>
-			{/* Div z socialami na dole, wyśrodkowany poziomo */}
+
 			<div className='absolute bottom-8 left-1/2 transform -translate-x-1/2'>
 				<Socials
 					containerStyles='flex gap-8'
