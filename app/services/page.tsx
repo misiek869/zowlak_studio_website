@@ -6,7 +6,13 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import Image from 'next/image'
 import { MdOutlineArrowOutward, MdArrowRightAlt } from 'react-icons/md'
-import { title } from 'process'
+
+import {
+	Tooltip,
+	TooltipContent,
+	TooltipProvider,
+	TooltipTrigger,
+} from '@/components/ui/tooltip'
 
 type Service = {
 	icon: string
@@ -99,9 +105,19 @@ const ServicesPage = () => {
 											height={48}
 											alt='service'
 										/>
-										<div className='w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center cursor-pointer text-2xl hover:rotate-45 transition-all text-slate-50'>
-											<MdOutlineArrowOutward />
-										</div>
+										<TooltipProvider>
+											<Tooltip>
+												<TooltipTrigger>
+													{' '}
+													<div className='w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center cursor-pointer text-2xl hover:rotate-45 transition-all text-slate-50'>
+														<MdOutlineArrowOutward />
+													</div>
+												</TooltipTrigger>
+												<TooltipContent>
+													<p className='text-lg '>Dowied się więcej</p>
+												</TooltipContent>
+											</Tooltip>
+										</TooltipProvider>
 									</div>
 									<h5 className='text-2xl text-slate-50 font-medium max-w-[240px] text-center my-auto'>
 										{item.title}
@@ -142,9 +158,19 @@ const ServicesPage = () => {
 											height={48}
 											alt='service'
 										/>
-										<div className='w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center cursor-pointer text-2xl hover:rotate-45 transition-all text-slate-50'>
-											<MdOutlineArrowOutward />
-										</div>
+										<TooltipProvider>
+											<Tooltip>
+												<TooltipTrigger>
+													{' '}
+													<div className='w-12 h-12 bg-gray-900 rounded-full flex items-center justify-center cursor-pointer text-2xl hover:rotate-45 transition-all text-slate-50'>
+														<MdOutlineArrowOutward />
+													</div>
+												</TooltipTrigger>
+												<TooltipContent>
+													<p className='text-lg '>Dowied się więcej</p>
+												</TooltipContent>
+											</Tooltip>
+										</TooltipProvider>
 									</div>
 									<h5 className='text-2xl text-slate-50 font-medium max-w-[240px] text-center my-auto'>
 										{item.title}
