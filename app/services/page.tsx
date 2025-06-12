@@ -6,6 +6,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import Image from 'next/image'
 import { MdOutlineArrowOutward, MdArrowRightAlt } from 'react-icons/md'
+import { MdArchitecture } from 'react-icons/md'
 
 import {
 	Tooltip,
@@ -69,7 +70,7 @@ const interiorServices: Service[] = [
 const ServicesPage = () => {
 	return (
 		<motion.section
-			className='h-screen flex items-center bg-red-200'
+			className='h-screen flex items-center'
 			initial={{ opacity: 0 }}
 			animate={{
 				opacity: 1,
