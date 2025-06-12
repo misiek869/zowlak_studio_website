@@ -40,7 +40,7 @@ const services: Service[] = [
 const ServicesPage = () => {
 	return (
 		<motion.section
-			className='h-screen flex items-center'
+			className='h-screen flex items-center bg-red-200'
 			initial={{ opacity: 0 }}
 			animate={{
 				opacity: 1,
@@ -52,7 +52,7 @@ const ServicesPage = () => {
 						Projekty <span className='font-bold'>Budowlane</span>
 					</h2>
 					<button className='btn btn-lg btn-gray flex gap-2'>
-						Wszystkie usługi <MdArrowRightAlt className='text-2xl' />
+						Zobacz moje projekty <MdArrowRightAlt className='text-2xl' />
 					</button>
 				</div>
 				<Swiper
