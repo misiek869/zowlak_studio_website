@@ -8,6 +8,7 @@ import { MdArrowCircleRight } from 'react-icons/md'
 import { HiOutlinePhone, HiOutlineMail } from 'react-icons/hi'
 import Socials from '@/components/Socials'
 import Pattern from '@/components/Pattern'
+import Link from 'next/link'
 
 const Home = () => {
 	return (
@@ -55,12 +56,13 @@ const Home = () => {
 						/>
 					</h1>
 					<h3 className='h3 mt-10 mb-10'>Architektura i Wnętrza</h3>
-					<button className='btn btn-lg btn-gray mb-12 xl:mb-8'>
-						<div className='flex items-center gap-3'>
-							<span>Czym się zajmujemy</span>
-							<MdArrowCircleRight className='text-xl' />
-						</div>
-					</button>
+					<Link
+						href='/services'
+						className='btn btn-lg btn-gray mb-12 xl:mb-8
+                 inline-flex items-center gap-3'>
+						<span>Czym się zajmujemy</span>
+						<MdArrowCircleRight className='text-xl' />
+					</Link>
 					{/* contact */}
 					<div className='flex flex-col xl:flex-row xl:items-center gap-4 xl:gap-8 mb-12 xl:mb-0'>
 						<div className='flex items-center gap-4 text-lg'>
