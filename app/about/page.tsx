@@ -51,8 +51,8 @@ const AboutPage = () => {
 							</p>
 							<div className='flex flex-col items-start gap-16'>
 								<Stats />
-								<Testimonials />
 								<Info />
+								<Testimonials />
 								{/* <Journey /> */}
 								{/* <Skills /> */}
 							</div>
