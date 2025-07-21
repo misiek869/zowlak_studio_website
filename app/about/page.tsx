@@ -9,6 +9,8 @@ import Journey from '@/components/Journey'
 import Skills from '@/components/Skills'
 import Blob from '@/components/Blob'
 import Socials from '@/components/Socials'
+import Link from 'next/link'
+import { MdArrowCircleRight } from 'react-icons/md'
 
 const AboutPage = () => {
 	return (
@@ -56,6 +58,12 @@ const AboutPage = () => {
 								{/* <Journey /> */}
 								{/* <Skills /> */}
 							</div>
+							<Link
+								href='/services'
+								className='btn btn-lg btn-gray mt-8 self-start'>
+								<span>W czym mogę Ci pomóc</span>
+								<MdArrowCircleRight className='ml-4 text-xl' />
+							</Link>
 						</div>
 					</ScrollArea>
 				</div>
