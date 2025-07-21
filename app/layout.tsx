@@ -31,7 +31,7 @@ export default function RootLayout({
 				<RectangleTransition />
 				<PageTransition>
 					<div className='flex'>
-						<div className='hidden 2xl:flex w-[285px] h-screen bg-gray-800 text-slate-50'>
+						<div className='hidden 2xl:flex w-[350px] h-screen bg-gray-800 text-slate-50'>
 							<MainNav />
 						</div>
 						<div className='w-full max-w-[1130px] px-[15px] mx-auto'>
